@@ -1,0 +1,21 @@
+body{
+  text-align: center;
+}
+
+.Social_Media a{
+  height: 60px;
+  width: 60px;
+  line-height: 12;
+}
+
+.Social_Media :hover {
+
+}
+
+#linkedin{
+  display: inline-flex;
+  background-image: url("../img/linkedin.png");
+  background-size: contain;
+  background-repeat:no-repeat;
+  background-position: center top;
+}
