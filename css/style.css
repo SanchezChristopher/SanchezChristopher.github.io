@@ -2,6 +2,11 @@ body{
   text-align: center;
 }
 
+img{
+  height: 200px;
+  width: 120px;
+}
+
 .Social_Media a{
   height: 60px;
   width: 60px;
@@ -18,4 +23,28 @@ body{
   background-size: contain;
   background-repeat:no-repeat;
   background-position: center top;
+}
+
+.rating {
+}
+
+.likes {
+   background: #F65A5B ;
+ color: #fff;
+ cursor: pointer;
+ display: inline-block;
+ font-size: 15px;
+   line-height: 40px;
+   min-width: 40px;
+   height: 40px;
+   text-align: center;
+   font-weight: 200;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   transition: background 500ms;
+}
+
+.likes:hover{
+ color: #F65A5B ;
+   background: rgba(246, 90, 91, 0.25);
+   transition: background 500ms;
 }
