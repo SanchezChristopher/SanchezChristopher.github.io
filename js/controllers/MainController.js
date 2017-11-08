@@ -30,3 +30,10 @@ app.controller('MainController', ['$scope', function($scope) {
   }
   */
 }]);
+
+app.controller('myCtrl', function($scope, $interval) {
+  $scope.theTime = new Date().toLocaleTimeString();
+  $interval(function () {
+      $scope.theTime = new Date().toLocaleTimeString();
+  }, 1000);
+});

@@ -7,13 +7,24 @@
 	<!-- This is needed for AngularJS it is the libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   </head>
+  
   <body ng-app="myApp">
+  
+  		<!-- This is using the built in service $interval -->
+		<div ng-controller="myCtrl"> 
+
+			<p>The time is:</p>
+
+			<h1>{{theTime}}</h1>
+
+		</div>
+		
     <p>This is going to be my first website!<br /> Hope it goes okay!</p>
 	<div class="main" ng-controller="MainController">
 	  <h1> {{ test }} </h1>
 	
-	<!-- ng-repeat will go through the array "dogs" each variable in the array will be given the name "dog"" -->
-	  <div ng-repeat="dog in dogs" class="col-md-6">
+		<!-- ng-repeat will go through the array "dogs" each variable in the array will be given the name "dog"" -->
+		<div ng-repeat="dog in dogs" class="col-md-6">
 		
 			<img ng-src="{{ dog.cover }}">
 			<p class="name"> This is my dog, {{ dog.name }}. </p>
@@ -21,7 +32,13 @@
 			<div class="rating" > 
 				<p class="likes" ng-click="plusOne($index)">+{{ dog.likes }} </p> 
 			</div>
-	  </div>
+		</div>
+	
+		<!-- not sure how directives work -->
+		<div class="firstApp">
+			<first-app></first-app>
+		</div>
+	
 	
 	</div>
 	<footer>
@@ -37,6 +54,14 @@
 	
 	<!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>	
+	
+	<!-- Directives -->
+    <script src="js/directives/firstApp.js"></script>	
+	
+	<!-- Service -->
+	<!-- $interval service is built in service just need the script at the beginning -->
   </body>
+  
+  
 </html>
 <!-- This is a comment that the browser will not display. -->
