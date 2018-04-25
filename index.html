@@ -1,67 +1,82 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Christopher Ryan Sanchez | Welcome!</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en">
+
+	<head>
 	
-	<!-- This is needed for AngularJS it is the libraries -->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  </head>
-  
-  <body ng-app="myApp">
-  
-  		<!-- This is using the built in service $interval -->
-		<div ng-controller="myCtrl"> 
-
-			<p>The time is:</p>
-
-			<h1>{{theTime}}</h1>
-
+		<title>Christopher Ryan Sanchez | Welcome!</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	</head>
+	
+	
+	
+	<body>
+		<div id="HOME">
 		</div>
-		
-    <p>This is going to be my first website!<br /> Hope it goes okay!</p>
-	<div class="main" ng-controller="MainController">
-	  <h1> {{ test }} </h1>
-	
-		<!-- ng-repeat will go through the array "dogs" each variable in the array will be given the name "dog"" -->
-		<div ng-repeat="dog in dogs" class="col-md-6">
-		
-			<img ng-src="{{ dog.cover }}">
-			<p class="name"> This is my dog, {{ dog.name }}. </p>
-			<p class="breed"> He is a {{ dog.breed }}. </p>
-			<div class="rating" > 
-				<p class="likes" ng-click="plusOne($index)">+{{ dog.likes }} </p> 
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<a class="navbar-brand" href="#HOME">Me</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#WHO">WHO</a></li>
+						<li><a href="#WHAT">WHAT</a></li>
+						<li><a href="#WHERE">WHERE</a></li>
+					</ul>
+				</div>
 			</div>
+		</nav>
+	
+		<div class="container-fluid bg-1 text-center" id="WHO">
+			<h3 class="margin">Who Am I?</h3>
+			<img src="img/2.jpg" class="img-circle main-image margin" alt="Klaus" height="100" width="100">
+			<h3 class="margin">I'm Klaus</h3>
 		</div>
-	
-		<!-- not sure how directives work -->
-		<div class="firstApp">
-			<first-app></first-app>
+
+		<div class="container-fluid bg-2 text-center" id="WHAT">
+			<h3 class="margin">What Am I?</h3>
+			<p>I am a Shetland Sheepdog or Sheltie</p>
+			<a href="https://en.wikipedia.org/wiki/Shetland_Sheepdog" class="btn btn-default btn-lg" target="_blank">
+				<span class="glyphicon glyphicon-search"></span>
+				Wikipedia
+			</a>
 		</div>
-	
-	
-	</div>
-	<footer>
-	  <div class="Social_Media">
-	    <a id="linkedin" href="https://www.linkedin.com/in/chrisrysa/" target="_blank">linkedin.com/in/chrisrysa</a>
-	  </div>
-	</footer>
-	
-	
-	
-	<!-- Modules -->
-    <script src="js/app.js"></script>
-	
-	<!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>	
-	
-	<!-- Directives -->
-    <script src="js/directives/firstApp.js"></script>	
-	
-	<!-- Service -->
-	<!-- $interval service is built in service just need the script at the beginning -->
-  </body>
-  
-  
+		
+		
+		<div class="container-fluid bg-3 text-center" id="WHERE">
+			<h3 class="margin">Where To Find Me?</h3>
+			<p>Shelties are a breed of herding dog that originated in the Shetland Islands.</p>
+			<div class="row">
+				<div class="col-sm-4">
+					<p>Pupper</p>
+					<img src="img/4.jpg" class="span-image margin" alt="Image" height="200" width="200">
+				</div>
+				<div class="col-sm-4">
+					<p>Doggo</p>
+					<img src="img/5.jpg" class="span-image margin" alt="Image" height="200" width="200">
+				</div>
+				<div class="col-sm-4"> 
+					<p>Doggo</p>
+					<img src="img/7.jpg" class="span-image margin" alt="Image" height="200" width="200">
+				</div>
+			</div>
+
+		</div>
+		<footer class="container-fluid bg-4 text-center">
+			<p>Footer Information: <a href="mailto:chrisryansanchez@gmail.com">Email</a></p> 
+		</footer>
+		
+		
+	</body>	
 </html>
-<!-- This is a comment that the browser will not display. -->

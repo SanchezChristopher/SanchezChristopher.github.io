@@ -1,50 +1,56 @@
-body{
-  text-align: center;
+body {
+    font: 20px "Montserrat", sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
 }
 
-img{
-  height: 200px;
-  width: 120px;
+p {
+	font-size: 16px;
 }
 
-.Social_Media a{
-  height: 60px;
-  width: 60px;
-  line-height: 12;
+.margin {
+	margin-bottom: 45px;
 }
 
-.Social_Media :hover {
-
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
 }
 
-#linkedin{
-  display: inline-flex;
-  background-image: url("../img/linkedin.png");
-  background-size: contain;
-  background-repeat:no-repeat;
-  background-position: center top;
+.navbar-nav li a:hover {
+    color: #1abc9c !important;
 }
 
-.rating {
+.main-image{
+	display:inline;
 }
 
-.likes {
-   background: #F65A5B ;
- color: #fff;
- cursor: pointer;
- display: inline-block;
- font-size: 15px;
-   line-height: 40px;
-   min-width: 40px;
-   height: 40px;
-   text-align: center;
-   font-weight: 200;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-   transition: background 500ms;
+.span-image{
+    max-width: 100%;
+	height: auto;
 }
 
-.likes:hover{
- color: #F65A5B ;
-   background: rgba(246, 90, 91, 0.25);
-   transition: background 500ms;
+.bg-1{
+	background-color: #64A3CC;
+	color: #ffffff;
+}
+
+.bg-2 { 
+	background-color: #FFFDF7;
+	color: #555555;
+}
+
+.bg-3 { 
+	background-color: #CCCB69;
+	color: #ffffff;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
