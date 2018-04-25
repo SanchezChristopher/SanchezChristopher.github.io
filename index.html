@@ -15,28 +15,28 @@
 	
 	
 	
-	<body>
-		<div id="HOME">
+	<body id="HOME">
+		<div id="topbar">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="#HOME">Me</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#WHO">WHO</a></li>
+							<li><a href="#WHAT">WHAT</a></li>
+							<li><a href="#WHERE">WHERE</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</div>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span> 
-					</button>
-					<a class="navbar-brand" href="#HOME">Me</a>
-				</div>
-				<div class="collapse navbar-collapse" id="myNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#WHO">WHO</a></li>
-						<li><a href="#WHAT">WHAT</a></li>
-						<li><a href="#WHERE">WHERE</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
 	
 		<div class="container-fluid bg-1 text-center" id="WHO">
 			<h3 class="margin">Who Am I?</h3>
@@ -60,15 +60,18 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<p>Pupper</p>
-					<img src="img/4.jpg" class="span-image margin" alt="Image" height="200" width="200">
+					<input type="image" src="img/4.jpg" class="button-modal" data-toggle="modal" data-target="#myModal">
+					<!-- <img src="img/4.jpg" class="span-image margin" alt="Image" height="200" width="200"> -->
 				</div>
 				<div class="col-sm-4">
 					<p>Doggo</p>
-					<img src="img/5.jpg" class="span-image margin" alt="Image" height="200" width="200">
+					<input type="image" src="img/5.jpg" class="button-modal" data-toggle="modal" data-target="#doggoModal_1" height="25%" width="25%">
+					<!-- <img src="img/5.jpg" class="span-image margin" alt="Image" height="200" width="200"> -->
 				</div>
 				<div class="col-sm-4"> 
 					<p>Doggo</p>
-					<img src="img/7.jpg" class="span-image margin" alt="Image" height="200" width="200">
+					<input type="image" src="img/7.jpg" class="button-modal" data-toggle="modal" data-target="#doggoModal_2" height="25%" width="25%">
+					<!-- <img src="img/7.jpg" class="span-image margin" alt="Image" height="200" width="200"> -->
 				</div>
 			</div>
 
@@ -76,6 +79,72 @@
 		<footer class="container-fluid bg-4 text-center">
 			<p>Footer Information: <a href="mailto:chrisryansanchez@gmail.com">Email</a></p> 
 		</footer>
+		
+		<!-- Modal 1-->
+		<div id="myModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Pupper</h4>
+					</div>
+					<div class="modal-body">
+						<p>This is Klaus as a Pupper.</p>
+						<img src="img/4.jpg" class="span-image margin" alt="Image">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+			</div>
+
+			</div>
+		</div>
+		
+		<!-- Modal 2-->
+		<div id="doggoModal_1" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Doggo</h4>
+					</div>
+					<div class="modal-body">
+						<p>This is Klaus as a Doggo.</p>
+						<img src="img/5.jpg" class="span-image margin" alt="Image">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+			</div>
+
+			</div>
+		</div>
+		
+		<!-- Modal 3-->
+		<div id="doggoModal_2" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Doggo</h4>
+					</div>
+					<div class="modal-body">
+						<p>This is Klaus as a Doggo.</p>
+						<img src="img/7.jpg" class="span-image margin" alt="Image">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+			</div>
+
+			</div>
+		</div>
 		
 		
 	</body>	
